@@ -179,7 +179,7 @@ Name | Type | Default |
 
 \+ **new default**(`options?`: Options\<QueueType, EnqueueOptionsType>): [default](#classesdefaultmd)
 
-*Defined in [src/lib/index.ts:37](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L37)*
+*Defined in [src/index.ts:37](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L37)*
 
 ##### Parameters:
 
@@ -205,13 +205,13 @@ Name | Type |
 
 • get **concurrency**(): number
 
-*Defined in [src/lib/index.ts:215](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L215)*
+*Defined in [src/index.ts:215](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L215)*
 
 **Returns:** number
 
 • set **concurrency**(`newConcurrency`: number): void
 
-*Defined in [src/lib/index.ts:219](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L219)*
+*Defined in [src/index.ts:219](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L219)*
 
 ##### Parameters:
 
@@ -227,7 +227,7 @@ ___
 
 • get **isPaused**(): boolean
 
-*Defined in [src/lib/index.ts:395](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L395)*
+*Defined in [src/index.ts:395](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L395)*
 
 Whether the queue is currently paused.
 
@@ -239,7 +239,7 @@ ___
 
 • get **pending**(): number
 
-*Defined in [src/lib/index.ts:388](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L388)*
+*Defined in [src/index.ts:388](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L388)*
 
 Number of pending promises.
 
@@ -251,7 +251,7 @@ ___
 
 • get **size**(): number
 
-*Defined in [src/lib/index.ts:372](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L372)*
+*Defined in [src/index.ts:372](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L372)*
 
 Size of the queue.
 
@@ -263,7 +263,7 @@ ___
 
 • get **timeout**(): number \| undefined
 
-*Defined in [src/lib/index.ts:399](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L399)*
+*Defined in [src/index.ts:399](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L399)*
 
 Set the timeout for future operations.
 
@@ -271,7 +271,7 @@ Set the timeout for future operations.
 
 • set **timeout**(`milliseconds`: number \| undefined): void
 
-*Defined in [src/lib/index.ts:406](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L406)*
+*Defined in [src/index.ts:406](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L406)*
 
 Set the timeout for future operations.
 
@@ -289,7 +289,7 @@ Name | Type |
 
 ▸ **add**\<TaskResultType>(`fn`: [Task](#task)\<TaskResultType>, `options`: Partial\<EnqueueOptionsType>): Promise\<TaskResultType>
 
-*Defined in [src/lib/index.ts:234](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L234)*
+*Defined in [src/index.ts:234](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L234)*
 
 Adds a sync or async task to the queue. Always returns a promise.
 
@@ -314,7 +314,7 @@ ___
 
 ▸ **addAll**\<TaskResultsType>(`functions`: ReadonlyArray\<[Task](#task)\<TaskResultsType>>, `options?`: EnqueueOptionsType): Promise\<TaskResultsType[]>
 
-*Defined in [src/lib/index.ts:285](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L285)*
+*Defined in [src/index.ts:285](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L285)*
 
 Same as `.add()`, but accepts an array of sync or async functions.
 
@@ -360,7 +360,7 @@ ___
 
 ▸ **clear**(): void
 
-*Defined in [src/lib/index.ts:323](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L323)*
+*Defined in [src/index.ts:323](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L323)*
 
 Clear the queue.
 
@@ -489,7 +489,7 @@ ___
 
 ▸ **onEmpty**(): Promise\<void>
 
-*Defined in [src/lib/index.ts:332](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L332)*
+*Defined in [src/index.ts:332](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L332)*
 
 Can be called multiple times. Useful if you for example add additional items at a later time.
 
@@ -503,7 +503,7 @@ ___
 
 ▸ **onIdle**(): Promise\<void>
 
-*Defined in [src/lib/index.ts:353](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L353)*
+*Defined in [src/index.ts:353](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L353)*
 
 The difference with `.onEmpty` is that `.onIdle` guarantees that all work from the queue has finished. `.onEmpty` merely signals that the queue is empty, but it could mean that some promises haven't completed yet.
 
@@ -536,7 +536,7 @@ ___
 
 ▸ **pause**(): void
 
-*Defined in [src/lib/index.ts:316](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L316)*
+*Defined in [src/index.ts:316](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L316)*
 
 Put queue execution on hold.
 
@@ -659,7 +659,7 @@ ___
 
 ▸ **sizeBy**(`options`: Readonly\<Partial\<EnqueueOptionsType>>): number
 
-*Defined in [src/lib/index.ts:381](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L381)*
+*Defined in [src/index.ts:381](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L381)*
 
 Size of the queue, filtered by the given options.
 
@@ -679,7 +679,7 @@ ___
 
 ▸ **start**(): this
 
-*Defined in [src/lib/index.ts:301](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/index.ts#L301)*
+*Defined in [src/index.ts:301](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/index.ts#L301)*
 
 Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)
 
@@ -739,7 +739,7 @@ Name | Type |
 
 • get **size**(): number
 
-*Defined in [src/lib/priority-queue.ts:60](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/priority-queue.ts#L60)*
+*Defined in [src/priority-queue.ts:60](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/priority-queue.ts#L60)*
 
 **Returns:** number
 
@@ -749,7 +749,7 @@ Name | Type |
 
 ▸ **dequeue**(): [RunFunction](#runfunction) \| undefined
 
-*Defined in [src/lib/priority-queue.ts:45](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/priority-queue.ts#L45)*
+*Defined in [src/priority-queue.ts:45](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/priority-queue.ts#L45)*
 
 **Returns:** [RunFunction](#runfunction) \| undefined
 
@@ -759,7 +759,7 @@ ___
 
 ▸ **enqueue**(`run`: [RunFunction](#runfunction), `options?`: Partial\<[PriorityQueueOptions](#interfacespriorityqueueoptionsmd)>): void
 
-*Defined in [src/lib/priority-queue.ts:13](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/priority-queue.ts#L13)*
+*Defined in [src/priority-queue.ts:13](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/priority-queue.ts#L13)*
 
 ##### Parameters:
 
@@ -776,7 +776,7 @@ ___
 
 ▸ **filter**(`options`: Readonly\<Partial\<[PriorityQueueOptions](#interfacespriorityqueueoptionsmd)>>): [RunFunction](#runfunction)[]
 
-*Defined in [src/lib/priority-queue.ts:49](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/priority-queue.ts#L49)*
+*Defined in [src/priority-queue.ts:49](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/priority-queue.ts#L49)*
 
 ##### Parameters:
 
@@ -830,7 +830,7 @@ Name | Type |
 
 Ƭ  **ResolveFunction**\<T>: (value?: T \| PromiseLike\<T>) => void
 
-*Defined in [src/lib/types.ts:9](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L9)*
+*Defined in [src/types.ts:9](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L9)*
 
 #### Type parameters:
 
@@ -844,7 +844,7 @@ ___
 
 Ƭ  **RunFunction**: () => Promise\<unknown>
 
-*Defined in [src/lib/types.ts:8](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L8)*
+*Defined in [src/types.ts:8](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L8)*
 
 ___
 
@@ -852,7 +852,7 @@ ___
 
 Ƭ  **Task**\<TaskResultType>: () => PromiseLike\<TaskResultType> \| () => TaskResultType
 
-*Defined in [src/lib/types.ts:10](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L10)*
+*Defined in [src/types.ts:10](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L10)*
 
 #### Type parameters:
 
@@ -866,7 +866,7 @@ Name |
 
 ▸ **PromiseFinally**\<T>(`promise`: T, `fallback`: any): Promise\<T>
 
-*Defined in [src/lib/utils.ts:1](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/utils.ts#L1)*
+*Defined in [src/utils.ts:1](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/utils.ts#L1)*
 
 #### Type parameters:
 
@@ -889,7 +889,7 @@ ___
 
 ▸ **PromiseTimeout**(`promise`: any, `milliseconds`: number, `fallback`: any): Promise\<any>
 
-*Defined in [src/lib/utils.ts:18](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/utils.ts#L18)*
+*Defined in [src/utils.ts:18](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/utils.ts#L18)*
 
 #### Parameters:
 
@@ -907,7 +907,7 @@ ___
 
 ▸ `Const`**empty**(): void
 
-*Defined in [src/lib/utils.ts:83](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/utils.ts#L83)*
+*Defined in [src/utils.ts:83](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/utils.ts#L83)*
 
 **Returns:** void
 
@@ -917,7 +917,7 @@ ___
 
 ▸ **lowerBound**\<T>(`array`: readonly T[], `value`: T, `comparator`: (a: T,b: T) => number): number
 
-*Defined in [src/lib/utils.ts:60](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/utils.ts#L60)*
+*Defined in [src/utils.ts:60](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/utils.ts#L60)*
 
 #### Type parameters:
 
@@ -968,7 +968,7 @@ Name | Type |
 
 • `Optional` `Readonly` **priority**: undefined \| number
 
-*Defined in [src/lib/options.ts:72](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L72)*
+*Defined in [src/options.ts:72](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L72)*
 
 Priority of operation. Operations with greater priority will be scheduled first.
 
@@ -1013,7 +1013,7 @@ Name | Type |
 
 • `Optional` `Readonly` **autoStart**: undefined \| false \| true
 
-*Defined in [src/lib/options.ts:21](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L21)*
+*Defined in [src/options.ts:21](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L21)*
 
 Whether queue tasks within concurrency limit, are auto-executed as soon as they're added.
 
@@ -1025,7 +1025,7 @@ ___
 
 • `Optional` `Readonly` **carryoverConcurrencyCount**: undefined \| false \| true
 
-*Defined in [src/lib/options.ts:51](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L51)*
+*Defined in [src/options.ts:51](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L51)*
 
 Whether the task must finish in the given interval or will be carried over into the next interval count.
 
@@ -1037,7 +1037,7 @@ ___
 
 • `Optional` `Readonly` **concurrency**: undefined \| number
 
-*Defined in [src/lib/options.ts:14](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L14)*
+*Defined in [src/options.ts:14](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L14)*
 
 Concurrency limit.
 
@@ -1051,7 +1051,7 @@ ___
 
 • `Optional` `Readonly` **interval**: undefined \| number
 
-*Defined in [src/lib/options.ts:44](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L44)*
+*Defined in [src/options.ts:44](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L44)*
 
 The length of time in milliseconds before the interval count resets. Must be finite.
 
@@ -1065,7 +1065,7 @@ ___
 
 • `Optional` `Readonly` **intervalCap**: undefined \| number
 
-*Defined in [src/lib/options.ts:35](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L35)*
+*Defined in [src/options.ts:35](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L35)*
 
 The max number of runs in the given interval of time.
 
@@ -1079,7 +1079,7 @@ ___
 
 • `Optional` `Readonly` **queueClass**: undefined \| {}
 
-*Defined in [src/lib/options.ts:26](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L26)*
+*Defined in [src/options.ts:26](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L26)*
 
 Class with a `enqueue` and `dequeue` method, and a `size` getter. See the [Custom QueueClass](https://github.com/sindresorhus/p-queue#custom-queueclass) section.
 
@@ -1089,7 +1089,7 @@ ___
 
 • `Optional` **throwOnTimeout**: undefined \| false \| true
 
-*Defined in [src/lib/options.ts:63](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L63)*
+*Defined in [src/options.ts:63](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L63)*
 
 Whether or not a timeout is considered an exception.
 
@@ -1101,7 +1101,7 @@ ___
 
 • `Optional` **timeout**: undefined \| number
 
-*Defined in [src/lib/options.ts:56](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/options.ts#L56)*
+*Defined in [src/options.ts:56](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/options.ts#L56)*
 
 Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already.
 
@@ -1138,7 +1138,7 @@ Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses
 
 • `Optional` **priority**: undefined \| number
 
-*Defined in [src/lib/types.ts:19](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L19)*
+*Defined in [src/types.ts:19](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L19)*
 
 
 <a name="interfacespriorityqueuerunoptionsmd"></a>
@@ -1174,7 +1174,7 @@ Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses
 
 *Inherited from [PriorityQueueOptions](#interfacespriorityqueueoptionsmd).[priority](#priority)*
 
-*Defined in [src/lib/types.ts:19](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L19)*
+*Defined in [src/types.ts:19](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L19)*
 
 ___
 
@@ -1182,7 +1182,7 @@ ___
 
 •  **run**: [RunFunction](#runfunction)
 
-*Defined in [src/lib/types.ts:23](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L23)*
+*Defined in [src/types.ts:23](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L23)*
 
 
 <a name="interfacesqueuemd"></a>
@@ -1223,7 +1223,7 @@ Name |
 
 •  **dequeue**: () => Element \| undefined
 
-*Defined in [src/lib/types.ts:4](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L4)*
+*Defined in [src/types.ts:4](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L4)*
 
 ___
 
@@ -1231,7 +1231,7 @@ ___
 
 •  **enqueue**: (run: Element,options?: Partial\<Options>) => void
 
-*Defined in [src/lib/types.ts:5](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L5)*
+*Defined in [src/types.ts:5](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L5)*
 
 ___
 
@@ -1239,7 +1239,7 @@ ___
 
 •  **filter**: (options: Partial\<Options>) => Element[]
 
-*Defined in [src/lib/types.ts:3](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L3)*
+*Defined in [src/types.ts:3](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L3)*
 
 ___
 
@@ -1247,7 +1247,7 @@ ___
 
 •  **size**: number
 
-*Defined in [src/lib/types.ts:2](https://github.com/idimetrix/tail-queue/blob/d0d1550/src/lib/types.ts#L2)*
+*Defined in [src/types.ts:2](https://github.com/idimetrix/tail-queue/blob/dcc7f42/src/types.ts#L2)*
 
 
 <a name="interfacesqueueaddoptionsmd"></a>
