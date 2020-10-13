@@ -1,0 +1,4122 @@
+{
+	"id": 0,
+	"name": "tail-queue",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 81,
+			"name": "PriorityQueue",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 92,
+					"name": "size",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 93,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/priority-queue.ts",
+							"line": 60,
+							"character": 17
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"id": 4,
+						"name": "Queue.size"
+					}
+				},
+				{
+					"id": 87,
+					"name": "dequeue",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 88,
+							"name": "dequeue",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"id": 29,
+										"name": "RunFunction"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/priority-queue.ts",
+							"line": 45,
+							"character": 16
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"id": 9,
+						"name": "Queue.dequeue"
+					}
+				},
+				{
+					"id": 83,
+					"name": "enqueue",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 84,
+							"name": "enqueue",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 85,
+									"name": "run",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 29,
+										"name": "RunFunction"
+									}
+								},
+								{
+									"id": 86,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 20,
+												"name": "PriorityQueueOptions"
+											}
+										],
+										"name": "Partial"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/priority-queue.ts",
+							"line": 13,
+							"character": 16
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"id": 12,
+						"name": "Queue.enqueue"
+					}
+				},
+				{
+					"id": 89,
+					"name": "filter",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 90,
+							"name": "filter",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 91,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 20,
+														"name": "PriorityQueueOptions"
+													}
+												],
+												"name": "Partial"
+											}
+										],
+										"name": "Readonly"
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 29,
+									"name": "RunFunction"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/priority-queue.ts",
+							"line": 49,
+							"character": 15
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"id": 5,
+						"name": "Queue.filter"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						92
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						87,
+						83,
+						89
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/priority-queue.ts",
+					"line": 9,
+					"character": 34
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"id": 1,
+					"typeArguments": [
+						{
+							"type": "reference",
+							"id": 29,
+							"name": "RunFunction"
+						},
+						{
+							"type": "reference",
+							"id": 20,
+							"name": "PriorityQueueOptions"
+						}
+					],
+					"name": "Queue"
+				}
+			]
+		},
+		{
+			"id": 94,
+			"name": "default",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "Promise queue with concurrency control."
+			},
+			"typeParameter": [
+				{
+					"id": 95,
+					"name": "QueueType",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 29,
+								"name": "RunFunction"
+							},
+							{
+								"type": "typeParameter",
+								"name": "EnqueueOptionsType"
+							}
+						],
+						"name": "Queue"
+					}
+				},
+				{
+					"id": 96,
+					"name": "EnqueueOptionsType",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "reference",
+						"id": 17,
+						"name": "QueueAddOptions"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 115,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 116,
+							"name": "new default",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 117,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 3,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "QueueType",
+												"constraint": {
+													"type": "reference",
+													"id": 1,
+													"typeArguments": [
+														{
+															"type": "reference",
+															"id": 29,
+															"name": "RunFunction"
+														},
+														{
+															"type": "typeParameter",
+															"name": "EnqueueOptionsType"
+														}
+													],
+													"name": "Queue"
+												},
+												"default": {
+													"type": "reference",
+													"name": "PriorityQueue"
+												}
+											},
+											{
+												"type": "typeParameter",
+												"name": "EnqueueOptionsType",
+												"constraint": {
+													"type": "reference",
+													"id": 17,
+													"name": "QueueAddOptions"
+												},
+												"default": {
+													"type": "reference",
+													"name": "DefaultAddOptions"
+												}
+											}
+										],
+										"name": "Options"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 94,
+								"name": "default"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 37,
+							"character": 44
+						}
+					]
+				},
+				{
+					"id": 179,
+					"name": "defaultMaxListeners",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isStatic": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 11,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 179,
+						"name": "EventEmitter.defaultMaxListeners"
+					}
+				},
+				{
+					"id": 138,
+					"name": "concurrency",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 139,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"setSignature": [
+						{
+							"id": 140,
+							"name": "__set",
+							"kind": 1048576,
+							"kindString": "Set signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 141,
+									"name": "newConcurrency",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 215,
+							"character": 24
+						},
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 219,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 169,
+					"name": "isPaused",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Whether the queue is currently paused."
+					},
+					"getSignature": [
+						{
+							"id": 170,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Whether the queue is currently paused."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 395,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 167,
+					"name": "pending",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Number of pending promises."
+					},
+					"getSignature": [
+						{
+							"id": 168,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Number of pending promises."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 388,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 162,
+					"name": "size",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Size of the queue."
+					},
+					"getSignature": [
+						{
+							"id": 163,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Size of the queue."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 372,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 171,
+					"name": "timeout",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Set the timeout for future operations."
+					},
+					"getSignature": [
+						{
+							"id": 172,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Set the timeout for future operations."
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						}
+					],
+					"setSignature": [
+						{
+							"id": 173,
+							"name": "__set",
+							"kind": 1048576,
+							"kindString": "Set signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Set the timeout for future operations."
+							},
+							"parameters": [
+								{
+									"id": 174,
+									"name": "milliseconds",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "number"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 399,
+							"character": 20
+						},
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 406,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 142,
+					"name": "add",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 143,
+							"name": "add",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Adds a sync or async task to the queue. Always returns a promise."
+							},
+							"typeParameter": [
+								{
+									"id": 144,
+									"name": "TaskResultType",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {
+										"isExported": true
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 145,
+									"name": "fn",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 37,
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "TaskResultType"
+											}
+										],
+										"name": "Task"
+									}
+								},
+								{
+									"id": 146,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "EnqueueOptionsType",
+												"constraint": {
+													"type": "reference",
+													"id": 17,
+													"name": "QueueAddOptions"
+												},
+												"default": {
+													"type": "reference",
+													"name": "DefaultAddOptions"
+												}
+											}
+										],
+										"name": "Partial"
+									},
+									"defaultValue": "{}"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "typeParameter",
+										"name": "TaskResultType"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 234,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 147,
+					"name": "addAll",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 148,
+							"name": "addAll",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Same as `.add()`, but accepts an array of sync or async functions.",
+								"returns": "A promise that resolves when all functions are resolved.\n"
+							},
+							"typeParameter": [
+								{
+									"id": 149,
+									"name": "TaskResultsType",
+									"kind": 131072,
+									"kindString": "Type parameter",
+									"flags": {
+										"isExported": true
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 150,
+									"name": "functions",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 37,
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "TaskResultsType"
+													}
+												],
+												"name": "Task"
+											}
+										],
+										"name": "ReadonlyArray"
+									}
+								},
+								{
+									"id": 151,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 96,
+										"name": "EnqueueOptionsType"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "array",
+										"elementType": {
+											"type": "typeParameter",
+											"name": "TaskResultsType"
+										}
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 285,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 191,
+					"name": "addListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 192,
+							"name": "addListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 193,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 194,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 191,
+								"name": "EventEmitter.addListener"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 17,
+							"character": 13
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 191,
+						"name": "EventEmitter.addListener"
+					}
+				},
+				{
+					"id": 156,
+					"name": "clear",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 157,
+							"name": "clear",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Clear the queue."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 323,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 187,
+					"name": "emit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 188,
+							"name": "emit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 189,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 190,
+									"name": "args",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "any"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 187,
+								"name": "EventEmitter.emit"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 16,
+							"character": 6
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 187,
+						"name": "EventEmitter.emit"
+					}
+				},
+				{
+					"id": 180,
+					"name": "eventNames",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 181,
+							"name": "eventNames",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								],
+								"name": "Array"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 180,
+								"name": "EventEmitter.eventNames"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 13,
+							"character": 12
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 180,
+						"name": "EventEmitter.eventNames"
+					}
+				},
+				{
+					"id": 185,
+					"name": "getMaxListeners",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 186,
+							"name": "getMaxListeners",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 185,
+								"name": "EventEmitter.getMaxListeners"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 15,
+							"character": 17
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 185,
+						"name": "EventEmitter.getMaxListeners"
+					}
+				},
+				{
+					"id": 225,
+					"name": "listenerCount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 226,
+							"name": "listenerCount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 227,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 175,
+								"name": "EventEmitter.listenerCount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 26,
+							"character": 15
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 175,
+						"name": "EventEmitter.listenerCount"
+					}
+				},
+				{
+					"id": 222,
+					"name": "listeners",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 223,
+							"name": "listeners",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 224,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Listener"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 222,
+								"name": "EventEmitter.listeners"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 25,
+							"character": 11
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 222,
+						"name": "EventEmitter.listeners"
+					}
+				},
+				{
+					"id": 215,
+					"name": "off",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 216,
+							"name": "off",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 217,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 218,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 215,
+								"name": "EventEmitter.off"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 23,
+							"character": 5
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 215,
+						"name": "EventEmitter.off"
+					}
+				},
+				{
+					"id": 195,
+					"name": "on",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 196,
+							"name": "on",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 197,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 198,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 195,
+								"name": "EventEmitter.on"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 18,
+							"character": 4
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 195,
+						"name": "EventEmitter.on"
+					}
+				},
+				{
+					"id": 158,
+					"name": "onEmpty",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 159,
+							"name": "onEmpty",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Can be called multiple times. Useful if you for example add additional items at a later time.",
+								"returns": "A promise that settles when the queue becomes empty.\n"
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 332,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 160,
+					"name": "onIdle",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 161,
+							"name": "onIdle",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The difference with `.onEmpty` is that `.onIdle` guarantees that all work from the queue has finished. `.onEmpty` merely signals that the queue is empty, but it could mean that some promises haven't completed yet.",
+								"returns": "A promise that settles when the queue becomes empty, and all promises have completed; `queue.size === 0 && queue.pending === 0`.\n"
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 353,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 199,
+					"name": "once",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 200,
+							"name": "once",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 201,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 202,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 199,
+								"name": "EventEmitter.once"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 19,
+							"character": 6
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 199,
+						"name": "EventEmitter.once"
+					}
+				},
+				{
+					"id": 154,
+					"name": "pause",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 155,
+							"name": "pause",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Put queue execution on hold."
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 316,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 203,
+					"name": "prependListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 204,
+							"name": "prependListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 205,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 206,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 203,
+								"name": "EventEmitter.prependListener"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 20,
+							"character": 17
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 203,
+						"name": "EventEmitter.prependListener"
+					}
+				},
+				{
+					"id": 207,
+					"name": "prependOnceListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 208,
+							"name": "prependOnceListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 209,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 210,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 207,
+								"name": "EventEmitter.prependOnceListener"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 21,
+							"character": 21
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 207,
+						"name": "EventEmitter.prependOnceListener"
+					}
+				},
+				{
+					"id": 228,
+					"name": "rawListeners",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 229,
+							"name": "rawListeners",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 230,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Listener"
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 228,
+								"name": "EventEmitter.rawListeners"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 27,
+							"character": 14
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 228,
+						"name": "EventEmitter.rawListeners"
+					}
+				},
+				{
+					"id": 219,
+					"name": "removeAllListeners",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 220,
+							"name": "removeAllListeners",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 221,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 219,
+								"name": "EventEmitter.removeAllListeners"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 24,
+							"character": 20
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 219,
+						"name": "EventEmitter.removeAllListeners"
+					}
+				},
+				{
+					"id": 211,
+					"name": "removeListener",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 212,
+							"name": "removeListener",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 213,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 214,
+									"name": "listener",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "Listener"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 211,
+								"name": "EventEmitter.removeListener"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 22,
+							"character": 16
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 211,
+						"name": "EventEmitter.removeListener"
+					}
+				},
+				{
+					"id": 182,
+					"name": "setMaxListeners",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 183,
+							"name": "setMaxListeners",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 184,
+									"name": "n",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 182,
+								"name": "EventEmitter.setMaxListeners"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 14,
+							"character": 17
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 182,
+						"name": "EventEmitter.setMaxListeners"
+					}
+				},
+				{
+					"id": 164,
+					"name": "sizeBy",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 165,
+							"name": "sizeBy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Size of the queue, filtered by the given options.",
+								"text": "For example, this can be used to find the number of items remaining in the queue with a specific priority level.\n"
+							},
+							"parameters": [
+								{
+									"id": 166,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "EnqueueOptionsType",
+														"constraint": {
+															"type": "reference",
+															"id": 17,
+															"name": "QueueAddOptions"
+														},
+														"default": {
+															"type": "reference",
+															"name": "DefaultAddOptions"
+														}
+													}
+												],
+												"name": "Partial"
+											}
+										],
+										"name": "Readonly"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 381,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 152,
+					"name": "start",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 153,
+							"name": "start",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Start (or resume) executing enqueued tasks within concurrency limit. No need to call this if queue is not paused (via `options.autoStart = false` or by `.pause()` method.)"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "this"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/index.ts",
+							"line": 301,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 175,
+					"name": "listenerCount",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isStatic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 176,
+							"name": "listenerCount",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 177,
+									"name": "emitter",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "EventEmitter"
+									}
+								},
+								{
+									"id": 178,
+									"name": "type",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"id": 175,
+								"name": "EventEmitter.listenerCount"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "node_modules/@types/events/index.d.ts",
+							"line": 10,
+							"character": 22
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 175,
+						"name": "EventEmitter.listenerCount"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						115
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						179
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						138,
+						169,
+						167,
+						162,
+						171
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						142,
+						147,
+						191,
+						156,
+						187,
+						180,
+						185,
+						225,
+						222,
+						215,
+						195,
+						158,
+						160,
+						199,
+						154,
+						203,
+						207,
+						228,
+						219,
+						211,
+						182,
+						164,
+						152,
+						175
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/index.ts",
+					"line": 12,
+					"character": 48
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "EventEmitter"
+				}
+			]
+		},
+		{
+			"id": 55,
+			"name": "DefaultAddOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 57,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 58,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 56,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Priority of operation. Operations with greater priority will be scheduled first.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "0\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 72,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						56
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/options.ts",
+					"line": 66,
+					"character": 34
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 17,
+					"name": "QueueAddOptions"
+				}
+			]
+		},
+		{
+			"id": 43,
+			"name": "Options",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 44,
+					"name": "QueueType",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 29,
+								"name": "RunFunction"
+							},
+							{
+								"type": "typeParameter",
+								"name": "QueueOptions"
+							}
+						],
+						"name": "Queue"
+					}
+				},
+				{
+					"id": 45,
+					"name": "QueueOptions",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "reference",
+						"id": 17,
+						"name": "QueueAddOptions"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 47,
+					"name": "autoStart",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Whether queue tasks within concurrency limit, are auto-executed as soon as they're added.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "true\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 21,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 52,
+					"name": "carryoverConcurrencyCount",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Whether the task must finish in the given interval or will be carried over into the next interval count.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 51,
+							"character": 36
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 46,
+					"name": "concurrency",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Concurrency limit.",
+						"text": "Minimum: `1`.\n",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "Infinity\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 14,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 51,
+					"name": "interval",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "The length of time in milliseconds before the interval count resets. Must be finite.",
+						"text": "Minimum: `0`.\n",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "0\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 44,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 50,
+					"name": "intervalCap",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "The max number of runs in the given interval of time.",
+						"text": "Minimum: `1`.\n",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "Infinity\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 35,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 48,
+					"name": "queueClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true,
+						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Class with a `enqueue` and `dequeue` method, and a `size` getter. See the [Custom QueueClass](https://github.com/sindresorhus/p-queue#custom-queueclass) section."
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 26,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 49,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									}
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 54,
+					"name": "throwOnTimeout",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Whether or not a timeout is considered an exception.",
+						"tags": [
+							{
+								"tag": "default",
+								"text": "false\n"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 63,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				},
+				{
+					"id": 53,
+					"name": "timeout",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"comment": {
+						"shortText": "Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already."
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/options.ts",
+							"line": 56,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						47,
+						52,
+						46,
+						51,
+						50,
+						48,
+						54,
+						53
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/options.ts",
+					"line": 3,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "PriorityQueueOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 22,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 23,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 21,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 19,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						21
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 18,
+					"character": 37
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 17,
+					"name": "QueueAddOptions"
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 24,
+					"name": "PriorityQueueRunOptions"
+				}
+			]
+		},
+		{
+			"id": 24,
+			"name": "PriorityQueueRunOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 27,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 28,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 26,
+					"name": "priority",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 19,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 21,
+						"name": "PriorityQueueOptions.priority"
+					}
+				},
+				{
+					"id": 25,
+					"name": "run",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 23,
+							"character": 5
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 29,
+						"name": "RunFunction"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						26,
+						25
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 22,
+					"character": 40
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 20,
+					"name": "PriorityQueueOptions"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Queue",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 2,
+					"name": "Element",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				},
+				{
+					"id": 3,
+					"name": "Options",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 9,
+					"name": "dequeue",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 4,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 10,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 11,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "Element"
+											},
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/lib/types.ts",
+									"line": 4,
+									"character": 10
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 12,
+					"name": "enqueue",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 5,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 13,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 14,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 15,
+											"name": "run",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "typeParameter",
+												"name": "Element"
+											}
+										},
+										{
+											"id": 16,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "Options"
+													}
+												],
+												"name": "Partial"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/lib/types.ts",
+									"line": 5,
+									"character": 10
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 5,
+					"name": "filter",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 3,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 6,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 7,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"parameters": [
+										{
+											"id": 8,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "Options"
+													}
+												],
+												"name": "Partial"
+											}
+										}
+									],
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "typeParameter",
+											"name": "Element"
+										}
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/lib/types.ts",
+									"line": 3,
+									"character": 9
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 4,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 2,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						9,
+						12,
+						5,
+						4
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 1,
+					"character": 22
+				}
+			],
+			"implementedBy": [
+				{
+					"type": "reference",
+					"id": 81,
+					"name": "PriorityQueue"
+				}
+			]
+		},
+		{
+			"id": 17,
+			"name": "QueueAddOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"indexSignature": [
+				{
+					"id": 18,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 19,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 14,
+					"character": 32
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 20,
+					"name": "PriorityQueueOptions"
+				},
+				{
+					"type": "reference",
+					"id": 55,
+					"name": "DefaultAddOptions"
+				}
+			]
+		},
+		{
+			"id": 32,
+			"name": "ResolveFunction",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 33,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 9,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 34,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 35,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"parameters": [
+								{
+									"id": 36,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "typeParameter",
+												"name": "T",
+												"default": {
+													"type": "intrinsic",
+													"name": "void"
+												}
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "typeParameter",
+														"name": "T",
+														"default": {
+															"type": "intrinsic",
+															"name": "void"
+														}
+													}
+												],
+												"name": "PromiseLike"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 9,
+							"character": 39
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 29,
+			"name": "RunFunction",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 8,
+					"character": 23
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 30,
+					"name": "__type",
+					"kind": 65536,
+					"kindString": "Type literal",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 31,
+							"name": "__call",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Promise"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/lib/types.ts",
+							"line": 8,
+							"character": 25
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": 37,
+			"name": "Task",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"typeParameter": [
+				{
+					"id": 38,
+					"name": "TaskResultType",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {
+						"isExported": true
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/types.ts",
+					"line": 10,
+					"character": 16
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 39,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 40,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "typeParameter",
+												"name": "TaskResultType"
+											}
+										],
+										"name": "PromiseLike"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/lib/types.ts",
+									"line": 11,
+									"character": 5
+								}
+							]
+						}
+					},
+					{
+						"type": "reflection",
+						"declaration": {
+							"id": 41,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 42,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "typeParameter",
+										"name": "TaskResultType"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/lib/types.ts",
+									"line": 12,
+									"character": 5
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 59,
+			"name": "PromiseFinally",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 60,
+					"name": "PromiseFinally",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"typeParameter": [
+						{
+							"id": 61,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 62,
+							"name": "promise",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "typeParameter",
+								"name": "T",
+								"default": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						},
+						{
+							"id": 63,
+							"name": "fallback",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "typeParameter",
+								"name": "T",
+								"default": {
+									"type": "intrinsic",
+									"name": "any"
+								}
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/utils.ts",
+					"line": 1,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 64,
+			"name": "PromiseTimeout",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 65,
+					"name": "PromiseTimeout",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"parameters": [
+						{
+							"id": 66,
+							"name": "promise",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						},
+						{
+							"id": 67,
+							"name": "milliseconds",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 68,
+							"name": "fallback",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Promise"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/utils.ts",
+					"line": 18,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 79,
+			"name": "empty",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"signatures": [
+				{
+					"id": 80,
+					"name": "empty",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/utils.ts",
+					"line": 83,
+					"character": 18
+				}
+			]
+		},
+		{
+			"id": 69,
+			"name": "lowerBound",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true
+			},
+			"signatures": [
+				{
+					"id": 70,
+					"name": "lowerBound",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExported": true
+					},
+					"typeParameter": [
+						{
+							"id": 71,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExported": true
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 72,
+							"name": "array",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "typeOperator",
+								"operator": "readonly",
+								"target": {
+									"type": "array",
+									"elementType": {
+										"type": "typeParameter",
+										"name": "T"
+									}
+								}
+							}
+						},
+						{
+							"id": 73,
+							"name": "value",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "typeParameter",
+								"name": "T"
+							}
+						},
+						{
+							"id": 74,
+							"name": "comparator",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExported": true
+							},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 75,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"signatures": [
+										{
+											"id": 76,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExported": true
+											},
+											"parameters": [
+												{
+													"id": 77,
+													"name": "a",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "typeParameter",
+														"name": "T"
+													}
+												},
+												{
+													"id": 78,
+													"name": "b",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "typeParameter",
+														"name": "T"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/lib/utils.ts",
+											"line": 63,
+											"character": 13
+										}
+									]
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/lib/utils.ts",
+					"line": 60,
+					"character": 26
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"kind": 128,
+			"children": [
+				81,
+				94
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				55,
+				43,
+				20,
+				24,
+				1,
+				17
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				32,
+				29,
+				37
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				59,
+				64,
+				79,
+				69
+			]
+		}
+	]
+}
